@@ -33,11 +33,9 @@
               <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="btnLogOut" pref="100" max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="btnAdd" alignment="0" max="32767" attributes="0"/>
-                      <Component id="btnVisitors" alignment="0" pref="100" max="32767" attributes="0"/>
-                      <Component id="btnStats" alignment="0" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="btnAdd" alignment="0" max="32767" attributes="0"/>
+                  <Component id="btnVisitors" alignment="0" pref="100" max="32767" attributes="0"/>
+                  <Component id="btnStats" alignment="0" max="32767" attributes="0"/>
               </Group>
               <EmptySpace pref="149" max="32767" attributes="0"/>
           </Group>
