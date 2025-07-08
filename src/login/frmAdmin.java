@@ -36,6 +36,10 @@ public class frmAdmin extends javax.swing.JFrame {
         btnVisitors = new javax.swing.JButton();
         btnStats = new javax.swing.JButton();
         btnLogOut = new javax.swing.JButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        mnuBack = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        mnuExit = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -98,6 +102,28 @@ public class frmAdmin extends javax.swing.JFrame {
                 .addContainerGap(125, Short.MAX_VALUE))
         );
 
+        mnuBack.setText("File");
+
+        jMenuItem1.setText("Back");
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
+        mnuBack.add(jMenuItem1);
+
+        mnuExit.setText("Exit");
+        mnuExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mnuExitActionPerformed(evt);
+            }
+        });
+        mnuBack.add(mnuExit);
+
+        jMenuBar1.add(mnuBack);
+
+        setJMenuBar(jMenuBar1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -121,6 +147,16 @@ public class frmAdmin extends javax.swing.JFrame {
         frmMain.show();
         this.hide();
     }//GEN-LAST:event_btnLogOutActionPerformed
+
+    private void mnuExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuExitActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_mnuExitActionPerformed
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+        frmMain frmMain = new frmMain();
+        frmMain.show();
+        this.hide();
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -152,9 +188,13 @@ public class frmAdmin extends javax.swing.JFrame {
     private javax.swing.JButton btnLogOut;
     private javax.swing.JButton btnStats;
     private javax.swing.JButton btnVisitors;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JLabel lblStats;
     private javax.swing.JLabel lblUsers;
     private javax.swing.JLabel lblView;
+    private javax.swing.JMenu mnuBack;
+    private javax.swing.JMenuItem mnuExit;
     private javax.swing.JPanel pnlBackground;
     // End of variables declaration//GEN-END:variables
 }
