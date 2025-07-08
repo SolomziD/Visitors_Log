@@ -52,6 +52,11 @@ public class frmAdmin extends javax.swing.JFrame {
         lblStats.setText("Stats:");
 
         btnAdd.setText("Add Users");
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAddActionPerformed(evt);
+            }
+        });
 
         btnVisitors.setText("View Visitors");
 
@@ -157,6 +162,11 @@ public class frmAdmin extends javax.swing.JFrame {
         frmMain.show();
         this.hide();
     }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
+        frmAddUsers addUsers = new frmAddUsers();
+        addUsers.show();this.hide();
+    }//GEN-LAST:event_btnAddActionPerformed
 
     /**
      * @param args the command line arguments
